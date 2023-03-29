@@ -7,9 +7,74 @@
   </head>
 
   <body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, accusantium.</p>
+    <form id="survey-form">
+      <div>
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="email" id="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+      </div>
+      <div>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="age" id="number" min="16" max="99">
+      </div>
+      <div>
+        <p>Which option best describes your current role?</p>
+        <select name="role" id="dropdown">
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+        </select>
+      </div>
+      <div>
+        <p>would you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" value="yes" name="user-recommend" checked>
+        Yes
+      </label>
+        <label><input type="radio" value="No" name="user-recommend">
+        No
+      </label>
+
+      </div>
+      <div>
+        <p>What would you like to see  improved? <span>(check all that apply)</span></p>
+        <label>
+          <input type="checkbox" name="prefer" value="front-end">
+          Front-End
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="back-end">
+          Back-End
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="vedios">
+          Vedios
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="challenges">
+          Challenges
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="additional courses">
+          Additional Courses
+        </label>
+
+      </div>
+      <div>
+        <p>Any comments or suggestions?</p>
+        <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    Hello
+   
     <script  src="js/index.js"></script>
   </body>
 </html>
